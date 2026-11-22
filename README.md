@@ -34,3 +34,19 @@ Correo de contacto configurado: **adminsinventory@gmail.com**
 5. Copia esa URL en **Play Console → Política de privacidad**.
 
 La página cumple los requisitos de Play: HTTPS, acceso público sin geovallado, página web estándar (no PDF) y específica para esta app.
+
+## Página de eliminación de datos
+
+Además de la política de privacidad, el proyecto incluye:
+
+- `eliminar-datos.html` → página pública donde los usuarios pueden solicitar que se borren sus datos.
+
+En Play Console, en **Seguridad de datos → Método para solicitar el borrado**, pega esta URL:
+
+```
+https://TU_USUARIO.github.io/s-inventory-privacidad/eliminar-datos.html
+```
+
+Sustituye `TU_USUARIO` por tu usuario de GitHub y usa el mismo nombre de repositorio que la política de privacidad.
+
+La página está en inglés y español, menciona el nombre de la app, explica los pasos de la solicitud y detalla qué datos se eliminan y cuánto tiempo pueden conservarse en respaldos.
