@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de privacidad de la aplicación S-Inventory">
+  <title>Política de Privacidad - S-Inventory</title>
+  <style>
+    :root {
+      --navy: #0e2136;
+      --blue: #1e4d77;
+      --blue-light: #2e7fda;
+      --accent: #ffc400;
+      --ink: #1f2937;
+      --muted: #5b6b7c;
+      --border: #e2ebf5;
+      --surface: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.68;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 0%, #dcecff 0, transparent 38%),
+        radial-gradient(circle at 90% 10%, #fff3cd 0, transparent 30%),
+        linear-gradient(180deg, #f4f8fd 0%, #fbfdff 100%);
+    }
+
+    header.hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 58%, var(--blue-light) 100%);
+      color: #fff;
+      padding: 62px 20px 82px;
+      text-align: center;
+      border-bottom: 6px solid var(--accent);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+
+    .brand span.icon {
+      display: inline-grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: 10px;
+      font-size: 1.1rem;
+    }
+
+    h1 {
+      margin: 16px 0 10px;
+      font-size: clamp(1.9rem, 5vw, 2.8rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 0 auto 18px;
+      max-width: 620px;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 1.02rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.13);
+      border: 1px solid rgba(255, 255, 255, 0.32);
+      border-radius: 999px;
+      padding: 7px 15px;
+      font-size: 0.86rem;
+      font-weight: 600;
+    }
+
+    main {
+      max-width: 900px;
+      margin: -46px auto 0;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      box-shadow: 0 20px 50px rgba(14, 33, 54, 0.12);
+      padding: 40px 46px 34px;
+    }
+
+    .intro {
+      margin: 0 0 6px;
+      font-size: 1.05rem;
+      color: #34465c;
+    }
+
+    .section { margin-top: 34px; }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 12px;
+      padding-left: 13px;
+      border-left: 4px solid var(--accent);
+      color: var(--blue);
+      font-size: 1.22rem;
+      line-height: 1.3;
+    }
+
+    h2 .emoji { font-size: 1.1rem; }
+
+    p { margin: 0 0 12px; }
+
+    ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 9px;
+    }
+
+    strong { color: #142f4c; }
+
+    a {
+      color: var(--blue);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover { color: var(--blue-light); }
+
+    .contact-box {
+      background: linear-gradient(135deg, #eff6ff 0%, #f8fbff 100%);
+      border: 1px solid #cfe0f2;
+      border-radius: 16px;
+      padding: 22px 24px;
+      margin-top: 14px;
+    }
+
+    .contact-box p:last-child { margin-bottom: 0; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+      background: var(--blue);
+      color: #fff;
+      padding: 11px 18px;
+      border-radius: 11px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.94rem;
+      box-shadow: 0 8px 18px rgba(30, 77, 119, 0.22);
+    }
+
+    .btn:hover {
+      background: var(--blue-light);
+      color: #fff;
+    }
+
+    .note {
+      background: #fffaf0;
+      border: 1px solid #f4dfa8;
+      border-radius: 12px;
+      padding: 14px 16px;
+      font-size: 0.94rem;
+      color: #6b5715;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 30px 20px 44px;
+    }
+
+    footer .dot { margin: 0 8px; }
+
+    @media (max-width: 640px) {
+      header.hero { padding: 46px 18px 72px; }
+      .card { padding: 28px 20px 26px; border-radius: 18px; }
+      main { margin-top: -38px; padding: 0 12px; }
+      .section { margin-top: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="brand"><span class="icon">📦</span> S-Inventory</div>
+    <h1>Política de Privacidad</h1>
+    <p class="subtitle">
+      Transparencia sobre cómo tratamos la información de tu cuenta,
+      tu inventario y tu dispositivo.
+    </p>
+    <span class="badge">Vigente desde el 22 de noviembre de 2026</span>
+  </header>
+
+  <main>
+    <div class="card">
+      <p class="intro">
+        S-Inventory es una aplicación para gestionar inventario, productos,
+        lotes con fechas de vencimiento, ventas y reportes. Esta política
+        explica qué datos recopilamos, cómo los usamos y con quién los
+        compartimos cuando utilizas la aplicación y sus servicios asociados.
+      </p>
+
+      <section class="section">
+        <h2><span class="emoji">👤</span> 1. Responsable de los datos</h2>
+        <p>
+          El responsable del tratamiento de tus datos es el desarrollador de
+          S-Inventory. Puedes escribirnos para consultar, corregir o eliminar
+          tu información.
+        </p>
+        <div class="contact-box">
+          <p><strong>Correo de contacto:</strong></p>
+          <a class="btn" href="mailto:adminsinventory@gmail.com">
+            ✉️ adminsinventory@gmail.com
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2><span class="emoji">🔐</span> 2. Datos que recopilamos</h2>
+        <ul>
+          <li>
+            <strong>Datos de cuenta:</strong> nombre, correo electrónico y
+            contraseña. La contraseña se guarda como hash, nunca en texto plano.
+          </li>
+          <li>
+            <strong>Datos de inventario y negocio:</strong> productos,
+            categorías, precios, stock, stock mínimo, códigos de barras,
+            imágenes, lotes, fechas de vencimiento, ventas y reportes.
+          </li>
+          <li>
+            <strong>Datos del dispositivo:</strong> token de notificaciones
+            (Firebase Cloud Messaging), plataforma, versión de la app y
+            registros técnicos para detectar errores.
+          </li>
+          <li>
+            <strong>Permisos:</strong> cámara (escáner de códigos), galería
+            (fotos de productos), Internet (conexión con el backend) y
+            notificaciones (alertas).
+          </li>
+          <li>
+            <strong>Comunicaciones:</strong> correos de recuperación, informes
+            y mensajes enviados al asistente BoxIA.
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2><span class="emoji">🎯</span> 3. Cómo usamos tus datos</h2>
+        <ul>
+          <li>Autenticarte y mantener tu sesión.</li>
+          <li>Mostrar, crear, editar y eliminar tu inventario, lotes y ventas.</li>
+          <li>Generar reportes e informes de tu negocio.</li>
+          <li>
+            Enviar notificaciones de stock bajo, productos próximos a vencer
+            o vencidos, y reportes semanales.
+          </li>
+          <li>Enviar correos de recuperación e informes periódicos.</li>
+          <li>Atender tus solicitudes de soporte y mejorar la aplicación.</li>
+        </ul>
+        <p class="note">
+          No usamos tus datos para publicidad y no los vendemos a terceros.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span class="emoji">🤝</span> 4. Con quién compartimos tus datos</h2>
+        <p>
+          Solo compartimos lo necesario con los proveedores que hacen posible
+          el servicio:
+        </p>
+        <ul>
+          <li><strong>Supabase:</strong> base de datos y autenticación.</li>
+          <li><strong>Render:</strong> alojamiento del backend.</li>
+          <li><strong>Firebase / Google:</strong> notificaciones push.</li>
+          <li><strong>Cloudinary:</strong> imágenes de productos.</li>
+          <li><strong>Brevo:</strong> correos transaccionales e informes.</li>
+          <li><strong>Groq:</strong> respuestas del asistente BoxIA.</li>
+        </ul>
+        <p>
+          También podemos divulgar datos si la ley lo exige o para proteger
+          la seguridad de la aplicación y de sus usuarios.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span class="emoji">🗑️</span> 5. Conservación y eliminación</h2>
+        <p>
+          Conservamos tus datos mientras tu cuenta esté activa. Puedes
+          eliminarla desde la opción <strong>Eliminar cuenta</strong> del
+          perfil de la app o solicitándolo por correo. Al hacerlo también se
+          eliminan los tokens de notificación y las alertas asociadas.
+        </p>
+        <p>
+          Algunos datos pueden permanecer temporalmente en copias de seguridad
+          por razones técnicas y legales.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span class="emoji">🛡️</span> 6. Seguridad</h2>
+        <p>
+          Las comunicaciones usan HTTPS/TLS, las contraseñas se guardan con
+          hash, el acceso a la API se controla con tokens JWT y limitamos el
+          acceso a los sistemas al personal autorizado.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span class="emoji">🧒</span> 7. Menores de edad</h2>
+        <p>
+          S-Inventory no está dirigida a niños ni a menores de 13 años. No
+          recopilamos conscientemente datos de menores. Si crees que un menor
+          creó una cuenta, escríbenos para eliminarla.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span class="emoji">📝</span> 8. Cambios en esta política</h2>
+        <p>
+          Podemos actualizar esta política cuando cambie la aplicación o la
+          normativa. La fecha de vigencia al inicio indica la versión actual.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span class="emoji">📧</span> 9. Contacto</h2>
+        <p>
+          Para preguntas sobre privacidad, acceso, corrección o eliminación
+          de tus datos, escríbenos:
+        </p>
+        <div class="contact-box">
+          <a class="btn" href="mailto:adminsinventory@gmail.com">
+            ✉️ adminsinventory@gmail.com
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 S-Inventory
+    <span class="dot">•</span>
+    Política de privacidad
+    <span class="dot">•</span>
+    <a href="mailto:adminsinventory@gmail.com">adminsinventory@gmail.com</a>
+  </footer>
+
+</body>
+</html>
